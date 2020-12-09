@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <SplitPane dividerPositions="0.7" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <SplitPane dividerPositions="0.9" layoutX="-3.0" layoutY="-4.0" orientation="VERTICAL" prefHeight="407.0" prefWidth="425.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <VBox layoutX="3.0" prefHeight="362.0" prefWidth="416.0">
+                                 <children>
+                                    <TextArea fx:id="chatHistory" prefHeight="362.0" prefWidth="472.0" />
+                                 </children>
+                              </VBox>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TextField fx:id="textField" onAction="#onClickAction" prefHeight="37.0" prefWidth="328.0" promptText="Введите сообщение..." />
+                              <Button fx:id="sendButton" layoutX="326.0" layoutY="-3.0" mnemonicParsing="false" onAction="#onClickAction" prefHeight="37.0" prefWidth="92.0" text="Отправить">
+                                 <font>
+                                    <Font name="AdobeDevanagari-Bold" size="14.0" />
+                                 </font></Button>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView prefHeight="407.0" prefWidth="188.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
