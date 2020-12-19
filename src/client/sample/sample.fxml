@@ -4,15 +4,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.sample.Controller">
    <children>
-      <SplitPane dividerPositions="0.7" prefHeight="400.0" prefWidth="600.0">
+      <SplitPane dividerPositions="0.7" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0">
                <children>
                   <SplitPane dividerPositions="0.9" layoutX="-3.0" layoutY="-4.0" orientation="VERTICAL" prefHeight="407.0" prefWidth="425.0">
                     <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                      <AnchorPane prefHeight="100.0" prefWidth="160.0">
                            <children>
                               <VBox layoutX="3.0" prefHeight="362.0" prefWidth="416.0">
                                  <children>
@@ -42,5 +42,3 @@
       </SplitPane>
    </children>
 </AnchorPane>
-
-
